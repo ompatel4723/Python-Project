@@ -11,7 +11,7 @@ class STEMCalculatorApp:
         self.root.geometry("620x700")
         self.root.resizable(False, False)
 
-        # Main Header Section (Cleaned)
+        # Main Header Section
         header = tk.Frame(self.root, bg="#1e3d59", pady=15)
         header.pack(fill="x")
 
