@@ -1,75 +1,55 @@
 # Physics & Math Formula Solver
 
-A desktop GUI application built with Python and Tkinter that automates multi-step Physics and Mathematics problems across four topic modules.
+A desktop GUI app built with Python and Tkinter that solves multi-step Physics and Math problems across four topic modules. 
 
-**Video Demo:** Available on my main portfolio at [ompatel4723.github.io/Portfolio](https://ompatel4723.github.io/Portfolio/) *(under the Formula Solver project card)*
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-orange.svg)](https://docs.python.org/3/library/tkinter.html)
 
 ---
 
 ## Why I Built This
 
-Before relocating from India to the U.S. in May 2026, I studied in the CBSE STEM stream (Physics, Chemistry, Mathematics, and Informatics Practices), where Python was part of my coursework. I built this project to apply Object-Oriented Programming (OOP) and GUI design to the exact kinematics, electricity, energy, and algebra formulas I used in class.
+Before moving from India to the U.S., I studied in the CBSE STEM stream (Physics, Chemistry, Math, and Informatics Practices), where Python was part of our coursework. I wanted to build something practical using Object-Oriented Programming (OOP) and GUI design to automate the exact kinematics, electricity, energy, and algebra formulas I was using in class.
 
-*(Note: Because Tkinter is a native desktop GUI library, this application cannot run directly inside a web browser on GitHub Pages. You can watch a full screen recording of the app running via the **Watch Demo** button on my portfolio site, or run `solver.py` locally using the steps below.)*
+> **Note:** Because Tkinter is a desktop GUI library, this app runs locally on your machine rather than directly inside a browser on GitHub Pages. You can watch a full video demo of it running on my [portfolio site](https://ompatel4723.github.io/Portfolio/) (under the Formula Solver card), or just clone the repo and run it yourself!
 
 ---
 
-## Calculation Modules
+## What's Inside (Calculation Modules)
 
 ### 1. Kinematics
-- **Velocity Solver (v=u+at):** Solves for any single missing variable (final velocity, initial velocity, acceleration, or time) when the other three are entered, automatically filling the empty input field and displaying the step-by-step substitution.
-- **Projectile Motion Analysis:** Computes horizontal range (R), maximum height (H), and total time of flight (T) from initial speed and launch angle using standard gravity (g=9.81m/s2).
+* **Velocity Solver ($v = u + at$):** Enter any 3 values, and it calculates the 4th missing variable while showing the step-by-step math.
+* **Projectile Motion:** Calculates horizontal range ($R$), max height ($H$), and time of flight ($T$) using your initial speed and launch angle.
 
 ### 2. Energy & Power
-- **Kinetic Energy (KE=12mv2):** Dynamically solves for kinetic energy, mass, or velocity when any two values are provided.
-- **Power Output (P=Wt):** Calculates power in Watts (W) from work done (J) and elapsed time (s).
+* **Kinetic Energy ($KE = \frac{1}{2}mv^2$):** Solves for kinetic energy, mass, or velocity given any two inputs.
+* **Power Output ($P = W/t$):** Calculates power in Watts from work done and time.
 
 ### 3. Electricity
-- **Ohm's Law Solver (V=IR):** Solves for voltage, current, or resistance given the remaining two values.
-- **Equivalent Resistance (R1 & R2):** Calculates both series (Rs=R1+R2) and parallel (Rp=R1R2R1+R2) resistance for two-resistor circuits.
+* **Ohm's Law ($V = IR$):** Quickly solves for voltage, current, or resistance.
+* **Equivalent Resistance:** Computes both series ($R_s$) and parallel ($R_p$) resistance for a two-resistor circuit.
 
 ### 4. Math & Geometry
-- **Quadratic Roots (ax2+bx+c=0):** Evaluates the discriminant (D=b2-4ac) to output either real roots or complex conjugate roots (x=realimagi).
-- **2D Distance Formula:** Calculates Euclidean distance between two coordinate points P1(x1,y1) and P2(x2,y2).
-
----
-
-## Key Features
-
-- **Tabbed Interface:** Uses `ttk.Notebook` and `LabelFrame` containers to organize 8 formula solvers cleanly across 4 category tabs.
-- **Step-by-Step Output Console:** Displays formatted equations, intermediate working, and final units inside a monospace `Courier` output box.
-- **Calculation Log Export:** Clicking **Export Calculation Log** appends the current output to a local `stem_results_log.txt` file with section dividers for later review.
-- **Input Validation & Error Handling:** Catches non-numeric entries, missing fields, and division-by-zero edge cases (such as t=0, a=0, or zero resistance) using `tkinter.messagebox` alerts.
+* **Quadratic Roots ($ax^2 + bx + c = 0$):** Finds the discriminant and outputs either real or complex roots.
+* **2D Distance Formula:** Calculates the Euclidean distance between two coordinate points.
 
 ---
 
 ## Tech Stack
 
-- **Language:** Python 3
-- **GUI Framework:** Tkinter (`tkinter`, `ttk`, `messagebox`)
-- **Standard Libraries:** `math`
+* **Language:** Python 3
+* **GUI Framework:** Tkinter (`tkinter`, `ttk`, `messagebox`)
+* **Libraries:** `math`
 
 ---
 
-## Repository Structure
+## How to Run It Locally
 
-```text
-└── solver.py           # Complete OOP Tkinter application and formula solvers
-```
-
----
-
-## How to Run Locally
-
-1. **Clone the repository:**
+1. **Clone the repo:**
    ```bash
-   git clone (https://github.com/ompatel4723/Python-Project.git)
+   git clone https://github.com/ompatel4723/Python-Project.git
    cd Python-Project
-   ```
 
-2. **Run the application:**
-   *(Tkinter is included with standard Python 3 installations on Windows and macOS)*
-   ```bash
+2. Run the script:
+(Tkinter comes built-in with standard Python installations)
    python solver.py
-   ```
-
