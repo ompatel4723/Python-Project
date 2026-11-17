@@ -46,11 +46,11 @@ Because Tkinter is a desktop GUI library, this app runs locally on your computer
 
 ```text
 ├── solver.py    # Complete OOP Tkinter application and formula calculation logic
+```
 
 ## How to Run Locally
 
 1. **Clone the repository:**
-   ```bash
    git clone https://github.com/ompatel4723/Python-Project.git
    cd Python-Project
 2. Run the application: (Tkinter is included with standard Python 3 installations on Windows and macOS)
